@@ -1,0 +1,74 @@
+{
+  "policy": {
+    "DEFAULT": {
+      "capabilities": [
+        "fetch",
+        "font",
+        "frame",
+        "object",
+        "other",
+        "script"
+      ],
+      "temp": false
+    },
+    "TRUSTED": {
+      "capabilities": [
+        "fetch",
+        "font",
+        "frame",
+        "object",
+        "other",
+        "script"
+      ],
+      "temp": false
+    },
+    "UNTRUSTED": {
+      "capabilities": [
+        "frame",
+        "font"
+      ],
+      "temp": false
+    },
+    "sites": {
+      "trusted": [],
+      "untrusted": [
+        "http:"
+      ],
+      "custom": {
+        "§:google.com": {
+          "capabilities": [
+            "fetch",
+            "font",
+            "frame",
+            "object",
+            "other",
+            "script",
+            "webgl"
+          ],
+          "temp": false
+        }
+      }
+    },
+    "enforced": true,
+    "autoAllowTop": false
+  },
+  "local": {
+    "debug": false,
+    "showCtxMenuItem": true,
+    "showCountBadge": true,
+    "showFullAddresses": false,
+    "amnesticUpdates": false,
+    "storage": "local",
+    "uuid": "d84d31aa-d603-4ae2-8173-3b18adcb1390",
+    "isTorBrowser": true
+  },
+  "sync": {
+    "global": false,
+    "xss": true,
+    "cascadeRestrictions": true,
+    "overrideTorBrowserPolicy": true,
+    "clearclick": true,
+    "storage": "sync"
+  },
+  "xssUserChoices": {}
+}
